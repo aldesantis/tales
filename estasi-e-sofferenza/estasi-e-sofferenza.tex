@@ -1,19 +1,45 @@
-\documentclass[a4paper,12pt]{book}
+\documentclass[a4paper,11pt,oneside,openright,final]{memoir}
 
 \usepackage[italian]{babel}
+\usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
-
-\frenchspacing
 
 \title{Estasi e sofferenza}
 \author{Alessandro Desantis}
-\date{}
+
+\makeatletter
+\def\thickhrulefill{\leavevmode \leaders \hrule height 1pt\hfill \kern \z@}
+\renewcommand{\maketitle}{\begin{titlingpage}%
+    \let\footnotesize\small
+    \let\footnoterule\relax
+    \parindent \z@
+    \reset@font
+    \null\vfil
+    \begin{flushleft}
+      \huge \@title
+    \end{flushleft}
+    \par
+    \hrule height 1pt
+    \par
+    \begin{flushright}
+      \LARGE \@author \par
+    \end{flushright}
+    \vskip 60\p@
+    \vfil\null
+  \end{titlingpage}%
+  \setcounter{footnote}{0}%
+}
+\makeatother
 
 \begin{document}
 
+\chapterstyle{companion}
+\pagestyle{plain}
+
 \maketitle
 
-\paragraph{}
+\plainbreak{1}
+
 Accadde che un giorno, durante il suo cammino, Akram capitò in un povero e
 minuscolo villaggio nel sud della Spagna, non segnato sulle carte. Un luogo
 delizioso, anche se, a dir la verità, un poco inquietante. Denso fumo nero
@@ -31,7 +57,8 @@ Si promise di avvicinarla prima di andarsene. Ma ora aveva un disperato bisogno
 di riposare. Aveva percorso molta strada per arrivare fin lì, quasi non sentiva
 più le gambe, e non mangiava dalla mattina precedente.
 
-\paragraph{}
+\plainbreak{1}
+
 Egli bussò a molte porte, ma nessuno voleva accogliere quello che sembrava un
 mendicante, vestito di stracci, sporco e puzzolente.
 
@@ -53,7 +80,8 @@ Gli diedero pane, formaggio e vino, lo lavarono e lo vestirono. Gli permisero di
 riposare in un letto, e non sdraiato sul fieno come aveva fatto da quando era
 partito.
 
-\paragraph{}
+\plainbreak{1}
+
 Dormì tutto il giorno, fino all'alba. Quando si svegliò, chiese della donna
 che aveva visto.
 
@@ -87,7 +115,8 @@ continui il mio cammino».
 E, detto ciò, si congedò dalla coppia, sapendo che, comunque fosse andata, non
 li avrebbe mai più rivisti.
 
-\paragraph{}
+\plainbreak{1}
+
 La spiaggia non era lontana, dopotutto quello era un piccolo villaggio, e Akram
 trovò il tragitto più breve di quanto ricordasse. Improvvisamente il coraggio
 gli venne meno. Tuttavia era ormai tardi per tirarsi indietro. Era convinto che
@@ -129,7 +158,8 @@ affrontato la sofferenza. È giunto il tempo dell'estasi».
 I due si allontanarono, la testa di lei appoggiata sulla spalla di Akram, con la
 dolcezza di cui solo una donna innamorata è capace.
 
-\paragraph{}
+\plainbreak{1}
+
 Mezz'ora dopo, una coppia di anziani passeggiava nello stesso modo in riva alla
 spiaggia. Ma le onde cancellavano le ultime impronte di Akram e della bella
 strega.
