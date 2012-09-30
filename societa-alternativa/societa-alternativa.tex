@@ -1,24 +1,45 @@
-\documentclass[a4paper,12pt]{book}
+\documentclass[a4paper,11pt,oneside,openright,final]{memoir}
 
 \usepackage[italian]{babel}
+\usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
-\usepackage{verse}
-
-\frenchspacing
 
 \title{La Società Alternativa}
 \author{Alessandro Desantis}
-\date{}
+
+\makeatletter
+\def\thickhrulefill{\leavevmode \leaders \hrule height 1pt\hfill \kern \z@}
+\renewcommand{\maketitle}{\begin{titlingpage}%
+    \let\footnotesize\small
+    \let\footnoterule\relax
+    \parindent \z@
+    \reset@font
+    \null\vfil
+    \begin{flushleft}
+      \huge \@title
+    \end{flushleft}
+    \par
+    \hrule height 1pt
+    \par
+    \begin{flushright}
+      \LARGE \@author \par
+    \end{flushright}
+    \vskip 60\p@
+    \vfil\null
+  \end{titlingpage}%
+  \setcounter{footnote}{0}%
+}
+\makeatother
 
 \begin{document}
 
+\chapterstyle{companion}
+\pagestyle{plain}
+
 \maketitle
 
-\begin{flushright}
-A L., astro della notte ed eclissi del giorno.
-\end{flushright}
-
 \clearpage
+\thispagestyle{empty}
 
 \begin{verse}
 \itshape{
@@ -58,8 +79,10 @@ Osa formare la tua agghiacciante simmetria?''
 \end{flushright}
 
 \chapter{Il rito}
+\setcounter{page}{3}
 
-\paragraph{}
+\plainbreak{1}
+
 Conobbi L. durante una fase particolare della mia vita: ero un avvocato di
 discreto successo, eppure non mi sentivo affatto felice; mi sembrava che le mie
 giornate fossero insopportabili, soffocanti nella loro perfezione. Ero una
@@ -92,7 +115,8 @@ Non feci altre domande, perché capii che ancora non voleva spingersi tanto
 oltre. Ma più tempo passavo con lei e più ero intossicato dai suoi
 atteggiamenti, dalla sua esistenza.
 
-\paragraph{}
+\plainbreak{1}
+
 Poco dopo il nostro primo incontro iniziai a scrivere. Non narravo apertamente
 di lei, forse perché mi vergognavo all'idea che qualcuno che conoscevo appena
 potesse avere un ascendente così forte su di me.
@@ -139,7 +163,8 @@ Alla fine accettai e non controvoglia, solo con un po' di timore.
 
 «Benissimo» rispose L. «Ora possiamo parlare di lavoro».
 
-\paragraph{}
+\plainbreak{1}
+
 Mi lasciò un indirizzo e una data. Si rifiutò di dirmi dove sarei andato.
 
 I giorni si succedettero in fretta, e il tanto atteso --- e temuto! --- momento
@@ -226,7 +251,8 @@ persone sono complicate, ma meravigliose a loro modo».
 Parlammo ancora per un po', quindi ci salutammo e ognuno andò per la propria
 strada.
 
-\paragraph{}
+\plainbreak{1}
+
 A quell'incontro ne seguirono altri, simili ma mai uguali: a volte veniva
 qualcuno di nuovo e anch'egli doveva passare quel rito di iniziazione del
 quale ero stato partecipe solo poche settimane prima. Vedendo come erano
@@ -280,7 +306,8 @@ Ebbi il sospetto che non avesse sentito la mia ultima frase.
 
 «A fare una passeggiata; il mare non è lontano».
 
-\paragraph{}
+\plainbreak{1}
+
 Poco oltre il teatro, in effetti, si trovava una bellissima spiaggia di cui non
 mi ero mai accorto in tutto quel tempo.
 
@@ -340,7 +367,8 @@ dentro di me covavo un sentimento che non era amore ma neanche odio.
 
 \chapter{Partenza}
 
-\paragraph{}
+\plainbreak{1}
+
 \emph{Fuori dal teatro, stasera, alle nove.}
 
 Il messaggio giungeva inaspettato, ma sapevo chi l'aveva mandato.
@@ -401,7 +429,8 @@ Allucinato, la guardavo.
 Mossi leggermente la testa, prima su, poi giù, come se volessi dire sì; in
 realtà, però, non era proprio un sì. Non troppo convinto, almeno.
 
-\paragraph{}
+\plainbreak{1}
+
 È curioso come il nostro cervello ricordi soprattutto l'odore dei luoghi che
 visitiamo. Ma se dovessi sforzarmi di far tornare alla mente l'immagine di
 quell'appartamento al dodicesimo piano non ricorderei l'odore, perché non ne
@@ -558,7 +587,8 @@ retrovisore.
 
 \chapter{Oltre il cancello}
 
-\paragraph{}
+\plainbreak{1}
+
 Motori. Furono la prima cosa che udii agli albori della mia nuova vita: motori
 che si spegnevano. Mentre aprivo gli occhi, lentamente perché la luce passava
 da ogni spiraglio e sembrava farli sanguinare, giunsero alle mie orecchie anche
@@ -683,7 +713,8 @@ Detto ciò tornò in macchina.
 
 «Ah, dimenticavo» aggiunse sorridendo prima di andare via. «Benvenuto».
 
-\paragraph{}
+\plainbreak{1}
+
 Seguii il saggio consiglio ricevuto e feci una doccia, quindi indossai una delle
 camicie nell'armadio che, come tutti i nuovi abiti, non solo era della giusta
 taglia ma anche di mio gradimento, quasi fosse stata scelta da qualcuno che
@@ -740,7 +771,8 @@ L. mi guardò, terribilmente seria.
 
 «Tu non dovrai mai dire a nessuno di cosa fai parte. Mai».
 
-\paragraph{}
+\plainbreak{1}
+
 Quella notte mi fu impossibile mantenere la promessa fatta a me stesso. ``Non
 pensare, non riflettere, non farti domande'' continuavo a ripetermi, ma le
 parole di L. insistevano nel risuonarmi gravi e minacciose in testa. ``Non dire
@@ -789,7 +821,8 @@ raggiunto la tranquillità che io cercavo da tempo.
 
 Mi fecero sentire a casa, e ciò mi rincuorò immensamente.
 
-\paragraph{}
+\plainbreak{1}
+
 Iniziò così la mia nuova vita. Ebbi l'occasione di conoscere moltissime persone
 che facevano parte della Società, non perché fossi io a cercarle --- nonostante
 gli insegnamenti di L., infatti, sono sempre rimasto piuttosto timido --- ma
@@ -849,7 +882,8 @@ Dopotutto, perché accadesse, non mi sarei neanche dovuto spostare molto.
 
 \chapter{Dio è amore}
 
-\paragraph{}
+\plainbreak{1}
+
 Il teatro era simile a quello nel quale si riuniva il gruppo di L., ma c'erano
 molte più persone; sembrava quasi che lo spettacolo avesse luogo in una
 metropoli, tanto la sala era piena. Eravamo tutti seduti --- io in prima fila,
@@ -936,7 +970,8 @@ Ero un'egoista.
 
 Ma io non potevo, non dovevo perderla.
 
-\paragraph{}
+\plainbreak{1}
+
 Accadde invece l'esatto contrario. L. non mi fu mai vicina come in quei giorni:
 ogni volta che le era possibile, mi chiedeva di farle visita, a pranzo, a cena,
 o semplicemente per un tè pomeridiano. E ogni volta il marito e il figlio erano
@@ -1014,7 +1049,8 @@ tempo tutto mi sarebbe stato più chiaro.
 Mi voltai verso il bambino per vedere se lui avesse capito --- nel qual caso mi
 sarei sentito un idiota --- ma era già andato via.
 
-\paragraph{}
+\plainbreak{1}
+
 Pochi giorni più tardi accadde l'inaspettato e --- ora che ripenso a quel
 momento --- l'inevitabile.
 
@@ -1102,7 +1138,8 @@ Infine sorrise, nuovamente rilassata.
 
 «Ovviamente no. Anche a me è piaciuto».
 
-\paragraph{}
+\plainbreak{1}
+
 Le nuvole si ergevano scure, gonfie e minacciose sopra le nostre teste. Io e L.
 eravamo sdraiati sul prato, e non dicevamo nulla. Ero stato io a chiederle di
 incontrarci quella volta, ma non riuscivo a trovare le parole, e così ella
@@ -1220,7 +1257,8 @@ Corremmo verso la sua casa. La nostra casa.
 
 \chapter{Cambiamenti}
 
-\paragraph{}
+\plainbreak{1}
+
 «Sono incinta».
 
 Lo disse tutto d'un tratto, senza preavviso, proprio come accade nei film
@@ -1267,7 +1305,8 @@ scatenato una lunga catena di eventi.
 
 Sapeva che le sue certezze stavano per crollare.
 
-\paragraph{}
+\plainbreak{1}
+
 Ovviamente quella notte non riuscii a chiudere occhio. Non capitava dai miei
 primi giorni nella Società. Era ormai un anno che ogni sera mi addormentavo
 tranquillo come un bambino, senza angosce o dubbi nel cuore.
@@ -1358,7 +1397,8 @@ Mi colpì dal basso, subdolamente, sul sopracciglio. Fu abbastanza forte da farm
 cadere, sbattendo violentemente la testa. L'ultima cosa che vidi fu il cielo
 stellato.
 
-\paragraph{}
+\plainbreak{1}
+
 «Ahia».
 
 «Scusa».
@@ -1401,7 +1441,8 @@ Lei non mi cercò.
 
 \chapter{Libertà vigilata}
 
-\paragraph{}
+\plainbreak{1}
+
 Un pomeriggio L. venne da me. Era adirata e confusa.
 
 «L'hanno ucciso,» ripeteva «mio Dio, l'hanno ucciso».
@@ -1439,7 +1480,8 @@ lo avesse rimosso dalla propria memoria.
 
 Il figlio era stato affidato ai nonni, giacché la madre era irrintracciabile.
 
-\paragraph{}
+\plainbreak{1}
+
 Quando la sera ci colse eravamo ancora in quella posizione. Ogni muscolo del
 mio corpo era addormentato, ma non osavo muovermi per non svegliarla.
 
@@ -1507,7 +1549,8 @@ aiuto per uscirne.
 
 O forse era lei ad aiutare me.
 
-\paragraph{}
+\plainbreak{1}
+
 Il piano era semplice quanto ambizioso: uscire dal cancello principale,
 chiedendo il permesso, per non tornare mai più. L. avrebbe addotto una
 motivazione qualunque, per esempio la ricerca di nuovi talenti. Quanto a me,
@@ -1555,7 +1598,8 @@ Ma stavamo già andando via quando lo disse.
 
 Senza neanche voltarsi L. rispose: «Come immaginavo».
 
-\paragraph{}
+\plainbreak{1}
+
 «Non sapevo che ci fosse un Consiglio» dissi mentre tornavamo a casa sua.
 
 Camminava in fretta. Per il bene di suo figlio era passata dalla disperazione
@@ -1585,7 +1629,8 @@ mi hanno voltato le spalle. Almeno spero».
 
 \chapter{Ritorno}
 
-\paragraph{}
+\plainbreak{1}
+
 Nei tre giorni successivi L. sfruttò tutte le sue conoscenze per tentare di
 evadere da quel luogo, ma senza successo. Alcuni non potevano aiutarla, altri
 avevano paura, altri ancora, addirittura, minacciarono di denunciarla al
@@ -1662,7 +1707,8 @@ dispiace per tuo marito. Era un brav'uomo».
 
 Lei fece solo un cenno con la testa.
 
-\paragraph{}
+\plainbreak{1}
+
 Aaron e i suoi uomini partirono con noi. L. si addormentò poco dopo il decollo,
 sfinita dagli avvenimenti e dalle emozioni di quei giorni. Io volevo sapere di
 più sull'uomo che sembrava tanto importante quanto pericoloso e aveva deciso di
@@ -1721,7 +1767,8 @@ sangue nelle vene «ma ancora non hanno fatto nulla: è ben custodito da certi
 miei conoscenti. Però non posso proteggerlo in eterno: dovete andare via finché
 siete in tempo».
 
-\paragraph{}
+\plainbreak{1}
+
 Quando l'aereo atterrò chiesi ad Aaron dove ci trovassimo.
 
 «In Inghilterra; troppo vicino a una delle sedi della Società. Siamo qui solo
@@ -1752,7 +1799,8 @@ Dopo qualche minuto tornarono da noi.
 
 «Sono pronta. Andiamo».
 
-\paragraph{}
+\plainbreak{1}
+
 L'aeroporto era affollato: persone che andavano e venivano, uomini d'affari,
 famiglie in gita...
 
@@ -1801,7 +1849,8 @@ il banco ci guardò sorridendo.
 
 \chapter{Epilogo}
 
-\paragraph{}
+\plainbreak{1}
+
 Harris osservò di soppiatto la sua nuova collega: era giovane, bella e piena
 di vita. Perché aveva scelto quel mestiere orribile? L'avrebbe presto logorata,
 stancata, annoiata. Non ce l'avrebbe fatta. Alla sua età doveva occuparsi di ben
@@ -1822,6 +1871,8 @@ bussò piano.
 Lo guardò --- Harris ne fu certo --- dritto negli occhi.
 
 «Mi serve un'altra penna. Questa è finita».
+
+\clearpage
 
 \tableofcontents
 
