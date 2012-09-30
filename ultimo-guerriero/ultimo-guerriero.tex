@@ -1,25 +1,44 @@
-\documentclass[a4paper,12pt]{book}
+\documentclass[a4paper,11pt,oneside,openright,draft]{memoir}
 
 \usepackage[italian]{babel}
+\usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
-
-\frenchspacing
 
 \title{L'ultimo guerriero}
 \author{Alessandro Desantis}
-\date{}
+
+\makeatletter
+\def\thickhrulefill{\leavevmode \leaders \hrule height 1pt\hfill \kern \z@}
+\renewcommand{\maketitle}{\begin{titlingpage}%
+    \let\footnotesize\small
+    \let\footnoterule\relax
+    \parindent \z@
+    \reset@font
+    \null\vfil
+    \begin{flushleft}
+      \huge \@title
+    \end{flushleft}
+    \par
+    \hrule height 1pt
+    \par
+    \begin{flushright}
+      \LARGE \@author \par
+    \end{flushright}
+    \vskip 60\p@
+    \vfil\null
+  \end{titlingpage}%
+  \setcounter{footnote}{0}%
+}
+\makeatother
 
 \begin{document}
 
-\maketitle
+\chapterstyle{companion}
 
-\begin{flushright}
-A Méav, che non ha mai perso di vista la via.
-\end{flushright}
+\maketitle
 
 \chapter{Dolorosa quotidianità}
 
-\paragraph{}
 «Non azzardarti mai più a ridicolizzarmi in pubblico, chiaro?! Non ti ho
 sposato per questo!»
 
@@ -45,7 +64,8 @@ mano chiusa nell’impugnare una matita azzurra.
 
 La porta di casa si chiuse pesantemente.
 
-\paragraph{}
+\plainbreak{1}
+
 «Mi dispiace tanto, figlia mia».
 
 Seduta sul suo trono ricoperto di pelli di volpe Méav ascoltava la madre
@@ -75,7 +95,8 @@ melodia per le sue orecchie.
 
 Una melodia che pensava non avrebbe mai ascoltato da vicino.
 
-\paragraph{}
+\plainbreak{1}
+
 Stava ultimando il suo disegno.
 
 «Benjamin, vieni, è pronto!» urlava Martha.
@@ -110,7 +131,8 @@ qualcos'altro.
 
 Ma quell'apatia lo spaventava più di ogni altra reazione.
 
-\paragraph{}
+\plainbreak{1}
+
 Mentre il figlio pranzava, Martha decise di dare una sistemata alla casa. Era
 già tirata a lustro, ma aveva un disperato bisogno di sentirsi utile.
 
@@ -150,7 +172,8 @@ E dopo tanto tempo lo sospettava anche lei.
 
 \chapter{Amare non basta}
 
-\paragraph{}
+\plainbreak{1}
+
 «In Scozia?»
 
 «Sì, un viaggio in Scozia! Hai sempre voluto farlo, ti lamentavi di non
@@ -170,7 +193,8 @@ fratello; non si sarebbe neanche accorto della loro assenza.
 
 Non si accorgeva mai di niente.
 
-\paragraph{}
+\plainbreak{1}
+
 In aereo Benjamin non la smetteva di fare domande. Voleva sapere dove sarebbero
 stati, cosa avrebbero fatto.
 
@@ -198,7 +222,8 @@ presto accorto che non era vero. Voleva confessare subito, ma quando vide il
 lampo di gioia nei suoi occhi non ne ebbe il coraggio.
 
 ``In un altro momento''.
-\paragraph{}
+\plainbreak{1}
+
 L’alloggio non era male; un po' rustico, ma almeno Benjamin aveva l'occasione
 di stare insieme a persone che condividevano la sua stessa passione.
 
@@ -221,7 +246,8 @@ aggiunse «te ne andrai più nervosa di prima».
 
 «Può darsi» rispose lei con un sorriso.
 
-\paragraph{}
+\plainbreak{1}
+
 Arrivò la notte e con essa uno stupendo cielo stellato, quasi del tutto libero
 dall'inquinamento luminoso. Se si ascoltava attentamente si potevano udire anche
 gli allegri canti che venivano dal villaggio.
@@ -252,7 +278,8 @@ il più malvagio, il più prepotente. Che il fine giustifica sempre i mezzi». E
 si fermò, guardando oltre i monti. «Che devono avere paura delle proprie
 emozioni, perché sono sbagliate».
 
-\paragraph{}
+\plainbreak{1}
+
 «Allora Ben, sei pronto?»
 
 In realtà era Martha a doversi ancora vestire quella mattina. Benjamin, per via
@@ -276,7 +303,8 @@ in qualcuno della sua età: era come se cercasse nei Celti ciò che gli mancava.
 
 David sperava ardentemente che lo trovasse.
 
-\paragraph{}
+\plainbreak{1}
+
 Gli abitanti del villaggio non aspettavano la visita dei campeggiatori quella
 mattina.
 
@@ -302,7 +330,8 @@ Méav cercava un figlio.
 
 Chi cerca trova.
 
-\paragraph{}
+\plainbreak{1}
+
 Martha cercava di seguire gli altri, tuttavia era difficile: Ben continuava a
 fermarsi ogni dieci passi; voleva vedere e conoscere i più insignificanti
 dettagli di ogni filo di paglia su cui metteva i piedi. Quando poi passarono
@@ -330,7 +359,8 @@ sua madre.
 
 La bionda lanciò loro un'ultima occhiata.
 
-\paragraph{}
+\plainbreak{1}
+
 Quella sera Martha era agitata sia per via della donna che avevano incontrato,
 sia perché Benjamin continuava a chiederle del padre. Ormai doveva aver capito
 che qualcosa non andava. Quando le ripeté la stessa domanda per la decima volta
@@ -379,7 +409,8 @@ fece silenzioso e non le rivolse la parola per tutta la sera.
 
 \chapter{Le stesse stelle}
 
-\paragraph{}
+\plainbreak{1}
+
 Méav non ricordava di essere mai stata così abbattuta. Le sembrava che intorno
 fosse tutto rigoglioso, e lei fosse l'unica erbaccia arida da estirpare.
 
@@ -402,7 +433,8 @@ perversa ossessione guardare ciò che le era stato negato.
 
 Sotto la notte stellata passeggiava.
 
-\paragraph{}
+\plainbreak{1}
+
 Era ormai passata una settimana dall'inizio del loro viaggio, ed era ora di
 tornare a casa. Benjamin si faceva sempre più silenzioso e distante. Martha
 capiva la sua sofferenza, ma cos'altro poteva fare?
@@ -427,7 +459,8 @@ Era lei a essere fuori luogo. Era lei quella incapace di amare, incapace di
 godersi i piccoli momenti.
 
 ``Sono io a vivere per un rubinetto che perde''.
-\paragraph{}
+\plainbreak{1}
+
 Benjamin sgattaiolò fuori dalla tenda, in silenzio. Prima però, diede
 un'ultima occhiata alla madre; non era sicuro di ciò che stava facendo, e non
 sapeva come sarebbe andata a finire. Aveva una sola certezza: di non voler
@@ -448,7 +481,8 @@ restare con i Celti, con la bella signora che cantava. Avrebbe voluto portare
 anche Martha ma non era possibile: a Benjamin pareva che la madre non
 appartenesse nemmeno a quel mondo meraviglioso.
 
-\paragraph{}
+\plainbreak{1}
+
 Il bambino camminava con il naso per aria, pervaso da felicità mista a un certo
 timore. Non lo preoccupava cosa sarebbe successo se avesse trovato la donna che
 cercava, ma ciò che sarebbe successo se non l'avesse trovata. Avrebbe saputo
@@ -494,7 +528,8 @@ Annuì energicamente per timore di lasciarsi sfuggire l'occasione.
 
 I due si incamminarono, mano nella mano.
 
-\paragraph{}
+\plainbreak{1}
+
 Il villaggio era piuttosto distante, così che Benjamin ebbe il tempo di porre
 alla donna molte domande. La prima era senz'altro la più semplice importante.
 
@@ -512,7 +547,8 @@ Andò avanti così per tutto il tempo, ma lei non diede mai segno di essere
 seccata. Ben pensò che Martha si sarebbe stufata già da molto e avrebbe
 iniziato a dare risposte brevi e secche; lo faceva sempre quando parlava troppo.
 
-\paragraph{}
+\plainbreak{1}
+
 Mezz'ora -- e almeno una ventina di domande -- più tardi, giunsero
 all'agognata destinazione. L'odore di paglia e fumo impregnava l'aria, ma senza
 dare fastidio.
@@ -541,7 +577,8 @@ scomoda panca di legno.
 
 Passò una notte dolce e senza sogni.
 
-\paragraph{}
+\plainbreak{1}
+
 Méav invece non riusciva a prendere sonno: troppi pensieri le affollavano la
 mente e le impedivano di dormire. Aveva portato il bambino nella tenda e si era
 coricata accanto a lui, carezzandolo con dolcezza come aveva desiderato fare fin
@@ -572,7 +609,8 @@ Era un pianto di speranza.
 
 \chapter{Diciassette secoli}
 
-\paragraph{}
+\plainbreak{1}
+
 Il sole non era ancora sorto quando Méav svegliò il bambino.
 
 «Benjamin, dobbiamo andare» disse scuotendolo con delicatezza.
@@ -638,7 +676,8 @@ Per l'ultima volta percorsero quel tragitto che dal campo portava al villaggio.
 
 Il campo dove dopo qualche ora Martha si sarebbe svegliata.
 
-\paragraph{}
+\plainbreak{1}
+
 «Tu hai fatto cosa?!»
 
 Solamh era scioccato. Non neanche cosa dire, tanto era allucinato. Non gli erano
@@ -691,7 +730,8 @@ non era completamente d'accordo con ciò che aveva fatto.
 
 «Va bene».
 
-\paragraph{}
+\plainbreak{1}
+
 «Ben, non è divertente. Vieni fuori!»
 
 Martha era uscita dalla tenda, e ora si stava aggirando per il campo. Chiese a
@@ -736,7 +776,8 @@ Si levarono mormorii di disapprovazione e si accorse che tutti la guardavano.
 Benjamin, dov'era Benjamin?!
 
 
-\paragraph{}
+\plainbreak{1}
+
 «Mi dispiace... Eri l'unica persona di cui mi fidassi».
 
 «Lo capisco, ma io sono quasi sempre stato accanto alla madre in questi due
@@ -780,7 +821,8 @@ giusto fare».
 Il sole era alto nel cielo. La figura dell'uomo in cammino si stagliava
 all'orizzonte.
 
-\paragraph{}
+\plainbreak{1}
+
 Martha non si aspettava una tale modernità in un ufficio di polizia.
 
 Soprattutto non si aspettava una tale cordialità: almeno dieci agenti cercavano
@@ -839,7 +881,8 @@ donna che cantava e Benjamin..».
 
 \chapter{La vita è una ruota}
 
-\paragraph{}
+\plainbreak{1}
+
 Con stupore di tutti Benjamin si abituò molto velocemente alla sua nuova vita.
 
 Méav faceva di tutto per viziarlo per quanto le fosse possibile, ma anche se
@@ -860,7 +903,8 @@ poter ascoltare, e ogni sera si addormentava al suono della voce di sua madre.
 
 La sua nuova madre.
 
-\paragraph{}
+\plainbreak{1}
+
 Méav aveva finalmente raggiunto quella felicità che tanto desiderava. Aveva un
 figlio. Quando la notte si svegliava, a volte, si assicurava che Benjamin fosse
 ancora lì accanto a lei: le sembrava di poterlo perdere da un momento
@@ -885,7 +929,8 @@ far sì che a Ben non mancasse nulla.
 
 Voleva solo renderlo felice, e per riflesso esserlo anche lei.
 
-\paragraph{}
+\plainbreak{1}
+
 {\itshape
 Incontrava Benjamin durante una passeggiata serale. Era vestita proprio come
 quella sera, ma c'era qualcosa di diverso nell'aria.
@@ -920,7 +965,8 @@ sembrava peggiorare le cose invece di migliorarle.
 
 ``Non è mio figlio''.
 
-\paragraph{}
+\plainbreak{1}
+
 Erano ormai passati due anni dalla scomparsa di Benjamin e da quando Martha lo
 aveva detto a Richard. Quest'ultimo aveva attraversato una fase d'ira, fatta di
 minacce e cattiverie nei confronti della moglie e poi si era calmato, ma la
@@ -942,7 +988,8 @@ di non aver sentito.
 
 Richard non si azzardò a ripetere la frase.
 
-\paragraph{}
+\plainbreak{1}
+
 Pochi mesi più tardi Richard era andato a vivere con la sua nuova compagna. Non
 c'era stato bisogno di dire niente: quando aveva smesso di tornare a casa la
 sera, era stato tutto chiaro.
@@ -969,7 +1016,8 @@ negli ultimi anni era scorsa con la stessa velocità.
 
 \chapter{Chiedere scusa}
 
-\paragraph{}
+\plainbreak{1}
+
 Tredici anni erano passati da quando Méav aveva preso Benjamin con sé. Così
 tanto che ormai lui aveva quasi dimenticato che la donna non era sua madre. Non
 la madre biologica almeno, perché ella non gli aveva mai fatto mancare nulla.
@@ -989,7 +1037,8 @@ liberarsi dei sensi di colpa.
 
 L'unico modo per chiedere scusa.
 
-\paragraph{}
+\plainbreak{1}
+
 La Malattia devastava il villaggio da ormai un anno. Credevano di poterla
 controllare ma non era così. I sintomi erano quelli di un comune raffreddore
 che portava lentamente alla morte per febbre, o più raramente per asfissia.
@@ -1027,7 +1076,8 @@ di nuovo con quelle bestie preferirei morire».
 La discussione finì lì. Cos'altro poteva dire? Non c'era modo di convincere
 suo figlio.
 
-\paragraph{}
+\plainbreak{1}
+
 Una notte però Méav non poté sopportare la vista di Ben che nel sonno
 delirava e tossiva, macchiandosi di sangue. Non era terrorizzata all'idea di
 perderlo -- da molto tempo non lo guardava più come quel bambino spaventato
@@ -1051,7 +1101,8 @@ fosse a vantaggio suo o di Benjamin, in ciò che stava accadendo.
 
 Nulla.
 
-\paragraph{}
+\plainbreak{1}
+
 La donna all'accettazione sbadigliò pesantemente, permettendo ai pazienti di
 ammirare la sua ugola.
 
@@ -1067,7 +1118,8 @@ gruppo si avviò verso la sala d'attesa.
 
 I pazienti osservarono la scena, alcuni per nulla sorpresi, altri esterrefatti.
 
-\paragraph{}
+\plainbreak{1}
+
 Benjamin tentò di capire dove si trovasse, ma non riusciva a distinguere
 chiaramente le forme. Gli sembrava di vedere Méav, la riconosceva dal colore
 dei capelli, così puri e sfavillanti nonostante l'età. Altre figure si
@@ -1096,7 +1148,8 @@ La donna singhiozzava in silenzio. Vide qualcuno avvicinarsi per abbracciarla.
 Chiuse gli occhi e cercò di dormire, ma il pianto della principessa continuava
 a tormentarlo.
 
-\paragraph{}
+\plainbreak{1}
+
 Quella sera, Méav apprese che sarebbero dovuti rimanere in ospedale almeno per
 un mese: la malattia -- per la quale, scoprì, era distribuito un vaccino da
 tempo -- aveva devastato il corpo di Benjamin, che doveva recuperare forze.
@@ -1107,7 +1160,8 @@ padre non voleva ma lei insistette.
 Uscì fuori, nel cortile dell'ospedale, e per un'ora non fece altro che guardare
 il cielo pensando a come avrebbe potuto dirlo a suo figlio.
 
-\paragraph{}
+\plainbreak{1}
+
 «Un mese... un lunghissimo mese».
 
 Benjamin si alzò dal letto per andarsene, facendo oscillare pericolosamente la
@@ -1121,7 +1175,8 @@ sembrava una rinuncia a combattere.
 
 \chapter{Due madri}
 
-\paragraph{}
+\plainbreak{1}
+
 Le dieci. Le dieci e mezza. Un battito di ciglia. Mezzogiorno. Sì, signora, è
 quasi il suo turno. Che numero ha? Ottantanove? Siamo al sessantatré. Un
 attimo, guardi quanta gente c’è. Aria calda, aria pesante, vapori di alcol.
@@ -1180,7 +1235,8 @@ di gioia: per gli altri due si trattava di un misto di gioia, rabbia e stupore.
 
 Qualunque cosa fosse però era terribilmente liberatoria.
 
-\paragraph{}
+\plainbreak{1}
+
 Tutti quanti parlarono a lungo, l’intera notte. Benjamin non osò confessare
 alla madre che era scappato perché non voleva più stare con lei: la vedeva
 troppo felice. Così le raccontò che si era perso cercandola e per una
@@ -1244,7 +1300,10 @@ gli procurarono un caldo infernale, insopportabile, mentre calava il silenzio.
 
 Agire una volta per non agire più.
 
-\paragraph{}
+\backmatter
+
+\chapter{Prologo}
+
 {\itshape
 Sono tutti sul divano. Ormai vi sprofondano, perché il povero nonno passa le
 giornate incollato davanti alla televisione, immobile. Sì, ci sono proprio
@@ -1292,6 +1351,8 @@ pare sì, perché le coprono gli occhi.
 Non abbastanza in fretta, però, perché Nathalie ha visto il lampo negli occhi
 del ragazzo, prima che sparisse dall’inquadratura.
 \/}
+
+\clearpage
 
 \tableofcontents
 
