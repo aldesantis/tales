@@ -1,23 +1,21 @@
 Tales
 =====
+This is a collection of short stories I have written using LaTeX.
 
-These are some tales I've written (and am still writing!) using LaTeX. They're
-not much useful unless you understand Italian and are willing to read what I
-think about certain situations and people.
+Compiling
+---------
+To compile a file and turn it into a readable PDF you will need the ```pdflatex``` binary along with some TeX Live
+packages (like the famous [memoir](http://www.ctan.org/pkg/memoir)).
 
-How to compile
---------------
+After you have installed all the dependencies, compile a tale by navigating to its directory and running:
 
-To read them you must install **pdflatex**. Once you got it, type the following
-commands in a shell:
+```console
+$ pdflatex file-name.tex
+$ pdflatex file-name.tex
+```
 
-    $ cd ultimo-guerriero
-    $ pdflatex ultimo-guerriero.tex
-
-This will, for example, compile my tale "L'ultimo guerriero". The same goes for
-the others.
+The command must be run twice to generate the ToC (Table of Contents).
 
 License
 -------
-
-The tales are free to read, but you cannot modify them nor claim they're yours!
+This content is released under the [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International](http://creativecommons.org/licenses/by-nc-nd/4.0/legalcode) license.
